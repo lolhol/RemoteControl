@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  color: black;
+
+  border-color: transparent;
+  background-color: rgb(239, 239, 239);
+
+  transition-property: scale;
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  scale: 110%;
+}

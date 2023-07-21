@@ -1,0 +1,10 @@
+{
+  "godbrigero": {
+    "JUMP": false,
+    "PAUSE": false,
+    "RETELEPORT": false,
+    "WALKFORWARD": false,
+    "STOP": false,
+    "RESTART": false
+  }
+}
