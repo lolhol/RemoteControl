@@ -21,11 +21,10 @@ export default function Panel() {
     if (canCheck) {
       const session = await getSession();
 
-      console.log(session?.user?.name + "!!!");
+      console.log(session);
 
       if (session?.user?.name !== undefined) {
         canCheck = true;
-        // Send a request to the server when the button is clicked
 
         const data = {
           currentSession: session,
