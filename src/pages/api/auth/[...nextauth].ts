@@ -3,6 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { promises as fs } from "fs";
 
 export const authOptions = {
+  secret: "11111",
   providers: [
     CredentialsProvider({
       name: "IGN",
