@@ -1,4 +1,5 @@
 import { useSession, signIn, signOut } from "next-auth/react";
+import Link from "next/link";
 import s from "./LoginButton.module.css";
 
 export default function LoginButton() {
@@ -10,9 +11,9 @@ export default function LoginButton() {
           Sign out
         </button>
 
-        <a className={s.button} href="/panel">
+        <Link className={s.button} href="/panel">
           Control Panel
-        </a>
+        </Link>
       </div>
     );
   }

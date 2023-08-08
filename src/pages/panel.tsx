@@ -80,11 +80,8 @@ export default function Panel() {
     e.preventDefault();
     sayQueue([]);
 
-    //console.log(JSON.stringify(SAY));
-
     handleClick("SAY_" + content.toLowerCase());
 
-    //console.log(content);
     setContent("");
   };
 
@@ -107,33 +104,27 @@ export default function Panel() {
           <button className={s.jumpButton} onClick={() => handleClick("JUMP")}>
             Jump
           </button>
-          //
           <button
             className={s.jumpButton}
             onClick={() => handleClick("FORWARD")}
           >
             Forward
           </button>
-          //
           <button className={s.jumpButton} onClick={() => handleClick("BACK")}>
             Back
           </button>
-          //
           <button className={s.jumpButton} onClick={() => handleClick("PAUSE")}>
             Pause
           </button>
-          //
           <button className={s.jumpButton} onClick={() => handleClick("RETP")}>
             Re-tp
           </button>
-          //
           <button
             className={s.jumpButton}
             onClick={() => handleClick("RESTART")}
           >
             Restart
           </button>
-          //
           <button
             className={s.jumpButton}
             onClick={() => handleSayClick("SAY")}
@@ -148,18 +139,15 @@ export default function Panel() {
               </form>
             ) : null}
           </div>
-          //
           <button className={s.jumpButton} onClick={() => handleClick("STOP")}>
             Stop
           </button>
-          //
           <button
             className={s.jumpButton}
             onClick={() => handleClick("THROWR")}
           >
             Throw-Rod
           </button>
-          //
           <div className={s.currentOperations}>
             <div className={s.currentOperationsRow}>
               <div className={s.currentOperationsButtons}>
@@ -213,8 +201,6 @@ export default function Panel() {
 }
 
 const handleExecute = async (macroActions: string[]) => {
-  // Send a request to the server when the button is clicked
-
   const data = {
     actions: macroActions,
     currentSession: await getSession(),
