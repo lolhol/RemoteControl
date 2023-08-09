@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { promises as fs } from "fs";
+import Providers from "next-auth/providers";
 
 export const authOptions = {
   secret: "11111",
