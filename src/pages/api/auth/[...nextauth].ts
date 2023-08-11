@@ -3,7 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { promises as fs } from "fs";
 import Providers from "next-auth/providers";
 
-export const authOptions = {
+export default NextAuth({
   secret: "11111",
   providers: [
     CredentialsProvider({
@@ -31,6 +31,4 @@ export const authOptions = {
       },
     }),
   ],
-};
-
-export default NextAuth(authOptions);
+});
